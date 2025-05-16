@@ -25,11 +25,10 @@ export default function Home() {
       <CardHeader dir="rtl" className="flex gap-3">
 <span className="bg-yellow-500 w-8 font-bold text-lg md:text-xl h-8 grid place-items-center rounded-full">1</span>
             <h1 className="text-xl md:text-2xl">
+
 سیستم گرمایشی فعال شد.
-
-              <br/>
-دمای خانه ۲۲ درجه تنظیم گردید.
-
+<br/>
+دمای اتاق ۲۲ درجه تنظیم گردید.
 </h1>
        </CardHeader>
       <Divider />
@@ -37,12 +36,10 @@ export default function Home() {
           <p className="text-right text-base md:text-xl text-default-500">
 
 امروز ۱۱ اسفند، با توجه به شرایط آب‌و‌هوایی، دمای هوا ۸ درجه سانتی‌گراد و وضعیت جوی نیمه‌ابری گزارش شده است.
-              <br/>
-
+<br/>
 با توجه به موقعیت مکانی شما و الگوی رفتاری روزهای گذشته، در این ساعت معمولاً در مسیر بازگشت از محل کار به خانه هستید و کمی بعد به استراحت روزانه می‌پردازید.
-
-              <br/>
-به همین دلیل، شرایط خانه را برای استراحت شما فراهم کرده‌ام.
+<br/>
+به همین دلیل، شرایط اتاق را برای استراحت شما فراهم کرده‌ام.
 </p>
       </CardBody>
       <Divider />
