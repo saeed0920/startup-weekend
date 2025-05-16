@@ -42,7 +42,6 @@ export default function Home() {
 به همین دلیل، شرایط اتاق را برای استراحت شما فراهم کرده‌ام.
 </p>
       </CardBody>
-      <Divider />
       
     </Card>
     </div>
