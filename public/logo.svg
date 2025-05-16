@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="white" />
+  
+  <!-- Air/Energy flow symbol -->
+  <path d="M150 130 C180 110, 220 110, 250 130" stroke="#4CAF50" stroke-width="8" fill="none" stroke-linecap="round" />
+  <path d="M150 170 C180 190, 220 190, 250 170" stroke="#4CAF50" stroke-width="8" fill="none" stroke-linecap="round" />
+  
+  <!-- Smart technology dot -->
+  <circle cx="200" cy="150" r="15" fill="#FF5722" />
+  
+  <!-- Text -->
+  <text x="200" y="260" font-family="Arial, sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#333333">ECO PILOT</text>
+  
+  <!-- Modern AI/IoT element -->
+  <path d="M135 150 L165 150" stroke="#0288D1" stroke-width="3" stroke-linecap="round" />
+  <path d="M235 150 L265 150" stroke="#0288D1" stroke-width="3" stroke-linecap="round" />
+</svg>
