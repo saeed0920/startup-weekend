@@ -5,7 +5,7 @@ import {Divider} from "@heroui/divider";
 import {  useState } from 'react';
 import {Button } from "@heroui/button";
 import {Textarea} from "@heroui/input";
-import { Link } from "@heroui/link";
+import {Link} from "@heroui/link";
 
 export default function Home() {
 
@@ -51,12 +51,12 @@ const contactUsData = [
  {
     label: "Linkedin",
     src: "https://api.iconify.design/logos:linkedin.svg",
-    link: "www.linkedin.com/in/mahmood-sadriyan",
+    url: "https://www.linkedin.com/in/mahmood-sadriyan",
   },
   {
     label: "Gmail",
     src: "https://api.iconify.design/logos:google-gmail.svg",
-    link: "mahmoodsadriyan@gmail.com",
+    url: "mail://mahmoodsadriyan@gmail.com",
   }
 ]
 
@@ -160,8 +160,7 @@ setTimeout(() => handleSend(),900)
     {contactUsData.map((link, index) => (
   <Link
     key={index}
-    href={link.link}
-    target="_blank"
+    href={link.url}
     rel="noopener noreferrer"
     className="flex flex-col justify-center text-center items-center gap-4 md:gap-6 sm:w-[10rem] overflow-hidden rounded-lg dark:text-white dark:shadow-lg shadow-md hover:shadow-lg transition-shadow flex-wrap self-stretch text-sm md:text-md box p-4 w-[8rem] sm:p-[20px]"
   >
