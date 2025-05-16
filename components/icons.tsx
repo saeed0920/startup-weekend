@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { IconSvgProps } from "@/types";
+import { Image } from "@heroui/image";
 
 export const Logo: React.FC<IconSvgProps> = ({
   size = 36,
@@ -8,7 +9,7 @@ export const Logo: React.FC<IconSvgProps> = ({
   height,
   ...props
 }) => (
-    <img src="./logo.png" className="w-[10rem] md:w-[15rem]"  alt="LOGO" />
+    <Image src="./logo1.png" className="w-auto py-1 object-cover md:h-[60px]"  alt="LOGO" />
 );
 
 export const DiscordIcon: React.FC<IconSvgProps> = ({

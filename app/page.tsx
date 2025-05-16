@@ -139,6 +139,10 @@ setTimeout(() => handleSend(),900)
         ))}
       </div>
     </div>
+<div className="flex flex-col mx-4 items-center">
+<h1 className="font-semibold text-2xl my-4 ">About us</h1>
+<Image className="object-cover" src="./aboutus.jpg" /> 
+</div>
 </div>
   );
 }
