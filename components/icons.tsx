@@ -1,7 +1,6 @@
 import * as React from "react";
 
 import { IconSvgProps } from "@/types";
-import LogoIcon from '../public/logo.svg';
 
 export const Logo: React.FC<IconSvgProps> = ({
   size = 36,
@@ -9,7 +8,7 @@ export const Logo: React.FC<IconSvgProps> = ({
   height,
   ...props
 }) => (
-    <img src="/logo.png" className="w-[10rem] md:w-[15rem]"  alt="LOGO" />
+    <img src="./logo.png" className="w-[10rem] md:w-[15rem]"  alt="LOGO" />
 );
 
 export const DiscordIcon: React.FC<IconSvgProps> = ({
