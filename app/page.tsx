@@ -1,11 +1,9 @@
 "use client"
 import {Card,  CardHeader, CardBody, CardFooter} from "@heroui/card";
 import {Image} from "@heroui/image";
-import {Popover, PopoverTrigger, PopoverContent} from "@heroui/popover";
 import {Divider} from "@heroui/divider";
-import { useEffect, useRef, useState } from 'react';
-import {Input} from "@heroui/input";
-import {Button, ButtonGroup} from "@heroui/button";
+import {  useState } from 'react';
+import {Button } from "@heroui/button";
 import {Textarea} from "@heroui/input";
 import { Link } from "@heroui/link";
 
@@ -47,8 +45,20 @@ const cardData = [
     title: "کنترل هوشمند دما",
     body: "شیرهای الکترونیکی به طور خودکار گرمایش کف را بر اساس الگوهای حضور و ترجیحات دمایی یادگیری شده تنظیم می‌کنند.",
   }
-]
+];
 
+const contactUsData = [
+ {
+    label: "Linkedin",
+    src: "https://api.iconify.design/logos:linkedin.svg",
+    link: "www.linkedin.com/in/mahmood-sadriyan",
+  },
+  {
+    label: "Gmail",
+    src: "https://api.iconify.design/logos:google-gmail.svg",
+    link: "mahmoodsadriyan@gmail.com",
+  }
+]
 
   return (
 <div className="flex gap-2 flex-col">
@@ -140,8 +150,29 @@ setTimeout(() => handleSend(),900)
       </div>
     </div>
 <div className="flex flex-col mx-4 items-center">
-<h1 className="font-semibold text-2xl my-4 ">About us</h1>
+<h1 className="font-semibold text-2xl my-4 ">درباره ما</h1>
 <Image className="object-cover" src="./aboutus.jpg" /> 
+</div>
+<div className="mt-12">
+<h1 className="font-semibold text-2xl my-4 text-center ">ارتباط با ما</h1>
+
+<div className="flex flex-wrap justify-center items-center w-full self-center my-auto gap-4 ">
+    {contactUsData.map((link, index) => (
+  <Link
+    key={index}
+    href={link.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex flex-col justify-center text-center items-center gap-4 md:gap-6 sm:w-[10rem] overflow-hidden rounded-lg dark:text-white dark:shadow-lg shadow-md hover:shadow-lg transition-shadow flex-wrap self-stretch text-sm md:text-md box p-4 w-[8rem] sm:p-[20px]"
+  >
+    <img
+      src={link.src}
+      alt={link.label}
+      className="object-fill w-[3rem] md:w-[6rem]"
+    />
+  </Link>
+))}</div>
+
 </div>
 </div>
   );
